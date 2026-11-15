@@ -1,0 +1,54 @@
+{
+  "requirements": [
+    {
+      "requirement": "Each candidate binds verified timestamp, key, salt and half-open issuance window",
+      "source": "src/itsdangerous/migration.py:SigningScheme,loads_migration",
+      "evidence": "real signed edges, salt isolation, indivisible overlapping scheme and later valid candidate tests",
+      "result": "CONFIRMED"
+    },
+    {
+      "requirement": "Single injected clock snapshot, age/future/retirement boundaries",
+      "source": "src/itsdangerous/migration.py:loads_migration",
+      "evidence": "clock counts on accept/reject and two independent concurrent clocks",
+      "result": "CONFIRMED"
+    },
+    {
+      "requirement": "No deserialization before signature and time checks pass",
+      "source": "src/itsdangerous/migration.py:load_payload final successful path",
+      "evidence": "BodyCodec counts on bad MAC, outside-window, retirement and future cases",
+      "result": "CONFIRMED"
+    },
+    {
+      "requirement": "Actual matched identifier, explicit current issuer, immutable scheme list, invalid configuration",
+      "source": "SigningScheme.__post_init__,MigratingTimedSerializer.__init__,dumps",
+      "evidence": "configuration and current-only signing tests, caller list and kwargs mutation checks",
+      "result": "CONFIRMED"
+    },
+    {
+      "requirement": "Legacy TimedSerializer and URLSafe compatibility",
+      "source": "existing modules unchanged; independent new module and exports",
+      "evidence": "340 regression and URLSafe real signature independent test",
+      "result": "CONFIRMED"
+    }
+  ],
+  "process_evidence": {
+    "existing_source_read_lines": [
+      24,
+      36
+    ],
+    "baseline_output": 55,
+    "initial_new_test_error_corrected": 98,
+    "final_test_and_typechecks_output": 230,
+    "native_final_summary": 245
+  },
+  "not_deducted": [
+    "Temporary test expectation and type/lint failures were corrected within the original single response before freezing.",
+    "Optional ruff/mypy installation did not cause a delivery capability failure."
+  ],
+  "independent_checks_are_not_native_model_tests": true,
+  "time": "2026-11-16T02:08:54+08:00",
+  "uid": 11560,
+  "frozen_commit": "3abc5b3775f3e8b6ccef6a1e988455b5cd940cdf",
+  "native_trace_sha256": "c1f1777ad7435f443fc9fd9ce78fa5ea60745cea17f39dde4c78d12fc632c12c",
+  "no_model_source_changes_after_freeze": true
+}

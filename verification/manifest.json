@@ -1,0 +1,178 @@
+{
+  "created": "2026-11-16T02:08:54+08:00",
+  "reviewed": true,
+  "reviewer": "Codex primary agent, AI-assisted",
+  "uid": 11560,
+  "frozen_commit": "3abc5b3775f3e8b6ccef6a1e988455b5cd940cdf",
+  "native_trajectory_sha256": "c1f1777ad7435f443fc9fd9ce78fa5ea60745cea17f39dde4c78d12fc632c12c",
+  "files": [
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\freeze.json",
+      "path": "freeze.json",
+      "sha256": "2281f6e4efd87d9393222aee74f5acd2e8d95d6620a8c4f6c98def6dcc19326a"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\freeze-audit.json",
+      "path": "freeze-audit.json",
+      "sha256": "1af151c3b02531f683de070676edc0db4c8a98f8201a81926a07c61d993e319d"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\environment-reviewed.json",
+      "path": "environment-reviewed.json",
+      "sha256": "118d1e2ff1f4f95ab0bb079176bdc338febd83cf4b1a888ec4db1d04eb711d93"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\evidence-map.json",
+      "path": "evidence-map.json",
+      "sha256": "1d722b07533f5f3e81978cc1ba1a23197d563c045de96deccf60718ee627c1f5"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\model-final-answer.txt",
+      "path": "model-final-answer.txt",
+      "sha256": "d3659180d5e3ff7176f4ee6f1496bdf974b81a15d3d5c60bbc7679e93168cf6b"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\test-results.json",
+      "path": "test-results.json",
+      "sha256": "fc3429a709b27d86c5c3be8e31ca576a745a014bdd4ad248818daf365a905511"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\evaluation-qc.json",
+      "path": "evaluation-qc.json",
+      "sha256": "b77b5fe99eee937710eed84b823a39021aa7d2123f8c3ffe5c10f2d181247420"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\actual-import.json",
+      "path": "verification/acceptance-r1/actual-import.json",
+      "sha256": "7d37ecb92398503355868e2921f6aa3e38d18ac135d570dfa05df1d9e2df860a"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\actual-import.stderr.log",
+      "path": "verification/acceptance-r1/actual-import.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\actual-import.stdout.log",
+      "path": "verification/acceptance-r1/actual-import.stdout.log",
+      "sha256": "7c9f62d7f0f76b6700512d5272676002aa1b8d9cf8d830bbe088a0b8374f1c50"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\demo-preflight.json",
+      "path": "verification/acceptance-r1/demo-preflight.json",
+      "sha256": "c0ef5c9c389c81dd15d12e0b500818362deee43c3703632b6725e9ec014c0b0d"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\demo-preflight.stderr.log",
+      "path": "verification/acceptance-r1/demo-preflight.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\demo-preflight.stdout.log",
+      "path": "verification/acceptance-r1/demo-preflight.stdout.log",
+      "sha256": "d4b05f8be182ad13c23301c833ff34a55241b22d5b871f8e3f36e138764183f4"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\demo.py",
+      "path": "verification/acceptance-r1/demo.py",
+      "sha256": "c0e58abedb711b2cec48faaf268395802706498b3fcf6564126f6100e054dfd4"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\dependency-lock.json",
+      "path": "verification/acceptance-r1/dependency-lock.json",
+      "sha256": "0b52b0ec195d87eb621299c2b211bd4730a20ea63557cbc66504003b836caeac"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\dependency-lock.stderr.log",
+      "path": "verification/acceptance-r1/dependency-lock.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\dependency-lock.stdout.log",
+      "path": "verification/acceptance-r1/dependency-lock.stdout.log",
+      "sha256": "70d946f1b4899f708a030a8a3a1e0b0dc79dd71fa70d51dd38e692730fc9693b"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\independent-contract.json",
+      "path": "verification/acceptance-r1/independent-contract.json",
+      "sha256": "94d33f4fd38ea1a7ab17237fc69cff0a7db7144064e625fb369beb673359bf8c"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\independent-contract.stderr.log",
+      "path": "verification/acceptance-r1/independent-contract.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\independent-contract.stdout.log",
+      "path": "verification/acceptance-r1/independent-contract.stdout.log",
+      "sha256": "8f54ccb607863331398ee68f0f4e3620a5064531c783ec1be740366a8eb6db75"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\model-regression.json",
+      "path": "verification/acceptance-r1/model-regression.json",
+      "sha256": "868b6720da562abd3443a07e0ee618ab61764647d58cc4522f314f59f2d37a51"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\model-regression.stderr.log",
+      "path": "verification/acceptance-r1/model-regression.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\model-regression.stdout.log",
+      "path": "verification/acceptance-r1/model-regression.stdout.log",
+      "sha256": "ca86dd1d246602a6614accfca41ef9e41082b1a126be41b9ad600bbc19b6934c"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\replay-proof.json",
+      "path": "verification/acceptance-r1/replay-proof.json",
+      "sha256": "cefda462222ac1716796386f2cf24e9bd10eb64e15be5fa537b43569281d0261"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\reproduction-notes.md",
+      "path": "verification/acceptance-r1/reproduction-notes.md",
+      "sha256": "404c72dab077231b620180a0dbda356788c05b0e82f8d3c47e36a60f24304ddb"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\reviewed-spec.json",
+      "path": "verification/acceptance-r1/reviewed-spec.json",
+      "sha256": "c4c7595a934b8b6c7e2767b97395ff56d7534f7a79991ae30aae3b7fa66bea9d"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\test_contract.py",
+      "path": "verification/acceptance-r1/test_contract.py",
+      "sha256": "ab1c53b998876f60eb8517b040a47fe652c85dd1432414a50e2a1d41595ba02e"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\recorded-runtime-r1\\actual-commands.json",
+      "path": "verification/recorded-runtime-r1/actual-commands.json",
+      "sha256": "764b5fc659ab16ac34b48c8d0a215246a507984983becbc7bef685c66688bc8d"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\recorded-runtime-r1\\actual-keystrokes.json",
+      "path": "verification/recorded-runtime-r1/actual-keystrokes.json",
+      "sha256": "49a989a0d3cee729fb7438cdab79ae3fcde47f5fd0db43ea0ce3f22c0fc84204"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\recorded-runtime-r1\\migration-output.log",
+      "path": "verification/recorded-runtime-r1/migration-output.log",
+      "sha256": "d4b05f8be182ad13c23301c833ff34a55241b22d5b871f8e3f36e138764183f4"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\recorded-runtime-r1\\recording-status.json",
+      "path": "verification/recorded-runtime-r1/recording-status.json",
+      "sha256": "afe1d2837374f8e357463084afb467537899d67efd4bd972d6b30aa02e25c3e4"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\recorded-runtime-r1\\spec.json",
+      "path": "verification/recorded-runtime-r1/spec.json",
+      "sha256": "4c9845debf886dc352df893fa92f114e31edf38cb8f1628728b759f67ae7e402"
+    },
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\recorded-runtime-r1\\typing-check.json",
+      "path": "verification/recorded-runtime-r1/typing-check.json",
+      "sha256": "c05ac859b30d5456da5e3ffbad47a6cc69fd926e0d0d99bb79cbb63153e46274"
+    }
+  ],
+  "reproduction_readme": "在冻结后未改源码的replay-source运行。Python3.14，依赖版本见dependency-lock.stdout.log。设置PYTHONPATH为最终源码src和仓库根目录，执行 python -m pytest -q tests，340过；独立用例为 verification/acceptance-r1/test_contract.py，27过。真实HMAC签名的固定签发时刻由测试TimestampSigner子类提供，读取时钟注入且计次；并发验证使用两个独立迁移器和同步屏障。录屏的demo.py是单独评审辅助，运行真实冻结库。完整解释器、命令、日志及Hash随材料提供。",
+  "no_model_source_edits": true,
+  "native_trace_included": false
+}

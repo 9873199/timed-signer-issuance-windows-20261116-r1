@@ -1,0 +1,12 @@
+{
+  "time": "2026-11-16T02:06:24+08:00",
+  "argv": [
+    "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\runtime-tasks\\itsdangerous\\env\\Scripts\\python.exe",
+    "-B",
+    "demo.py"
+  ],
+  "cwd": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1",
+  "exit_code": 0,
+  "stdout_log": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\demo-preflight.stdout.log",
+  "stderr_log": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\demo-preflight.stderr.log"
+}

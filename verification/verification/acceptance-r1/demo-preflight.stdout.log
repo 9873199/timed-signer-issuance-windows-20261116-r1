@@ -1,0 +1,9 @@
+Timed signature migration
+
+Earlier signed session: ACCEPTED, scheme = retiring
+Account: example
+Old key, timestamp beyond issuance window: REJECTED
+At exact retirement time: REJECTED
+Newly signed session uses scheme: current
+
+All displayed checks use real HMAC signatures.

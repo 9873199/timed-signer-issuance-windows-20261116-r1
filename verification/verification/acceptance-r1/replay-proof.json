@@ -1,0 +1,29 @@
+{
+  "time": "2026-11-16T02:05:53+08:00",
+  "uid": 11560,
+  "run_id": "uf-20261116-new20-timed-signer-issuance-windows",
+  "actual": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\runtime-tasks\\itsdangerous\\env\\Scripts\\python.exe",
+    "modules": {
+      "itsdangerous.migration": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\replay-source\\src\\itsdangerous\\migration.py",
+      "itsdangerous.timed": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\replay-source\\src\\itsdangerous\\timed.py"
+    }
+  },
+  "replay_source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\evaluation\\uf-20261116-new20-timed-signer-issuance-windows\\verification\\acceptance-r1\\replay-source",
+  "frozen_hashes_unchanged": true,
+  "replay_source_hashes_unchanged": true,
+  "dependency_environment": "Reused the task dependency environment; exact pip freeze retained",
+  "commands": [
+    {
+      "name": "model-regression",
+      "exit_code": 0
+    },
+    {
+      "name": "independent-contract",
+      "exit_code": 0
+    }
+  ],
+  "score": null,
+  "semantic_review": "PENDING"
+}

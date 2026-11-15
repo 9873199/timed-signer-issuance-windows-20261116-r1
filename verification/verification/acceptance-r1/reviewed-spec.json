@@ -1,0 +1,55 @@
+{
+  "uid": 11560,
+  "run_id": "uf-20261116-new20-timed-signer-issuance-windows",
+  "reviewed": true,
+  "reviewer": "Codex primary agent, AI-assisted",
+  "frozen_trace_sha256": "c1f1777ad7435f443fc9fd9ce78fa5ea60745cea17f39dde4c78d12fc632c12c",
+  "revision": "acceptance-r1",
+  "product_modules": [
+    "itsdangerous.migration",
+    "itsdangerous.timed"
+  ],
+  "support_files": [
+    {
+      "source": "D:\\hc\\userFeedback\\cache\\security-new20-20261116-r1\\review-design\\11560\\test_contract.py",
+      "path": "test_contract.py",
+      "sha256": "ab1c53b998876f60eb8517b040a47fe652c85dd1432414a50e2a1d41595ba02e"
+    }
+  ],
+  "commands": [
+    {
+      "name": "model-regression",
+      "argv": [
+        "{python}",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "tests",
+        "-o",
+        "addopts=",
+        "-p",
+        "no:cacheprovider",
+        "--disable-socket"
+      ],
+      "timeout": 300
+    },
+    {
+      "name": "independent-contract",
+      "argv": [
+        "{python}",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "{verification}/test_contract.py",
+        "-o",
+        "addopts=",
+        "-p",
+        "no:cacheprovider",
+        "--disable-socket"
+      ],
+      "timeout": 300
+    }
+  ]
+}

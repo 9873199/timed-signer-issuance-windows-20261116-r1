@@ -1,0 +1,26 @@
+完成。所有检查通过（340 个测试，含 43 个新测试；ruff、mypy --strict、pyright、verifytypes 100%、Sphinx `-W` 均干净）。
+
+## 实现内容
+
+**新模块 `src/itsdangerous/migration.py`**，现有 `TimedSerializer`/`URLSafeTimedSerializer` 代码零改动（`__init__.py` 只加导出）：
+
+- **`SigningScheme`**（frozen dataclass，含冻结的 `signer_kwargs` 映射）：`id`、`secret_key`、`salt`、签名器参数、半开签发区间 `[valid_from, valid_to)`、停用时刻 `retire_at`。`repr` 对密钥打码，永不输出密钥材料。
+- **`MigratingTimedSerializer`** / **`URLSafeMigratingTimedSerializer`**：接收不可变方案列表（复制为 tuple，调用方后续改列表无影响）和显式 `current_scheme`。
+
+**验证契约（每次 `loads_migration` 只读注入时钟一次，全部检查共用同一快照）：**
+
+1. `now >= retire_at` 的方案在碰输入前跳过——**停用时刻本身即不可用**；
+2. 先用该方案自己的 key/salt 验签名和内嵌时间戳，未验内容不参与方案选择或排序；
+3. 验过的时间戳必须落在 `[valid_from, valid_to)`——左端点接受、右端点拒绝；
+4. 未来偏差 `ts > now + future_tolerance` 拒绝，**相等接受**；
+5. `max_age`：`now - ts > max_age` 拒绝，**相等接受**（与 `TimestampSigner` 一致）。
+
+每个方案必须独立完整满足契约，前一方案解出的时间不可能与后一方案的 key 拼成成功；重合方案取第一个完整通过者。**业务正文只在签名和全部时间检查通过后才反序列化一次**，返回 `(payload, scheme_id)`，不返回任何密钥。`dumps` 永远只用当前方案，且拒绝临时传 salt。
+
+**配置时拒绝**：区间倒置、`retire_at < valid_to`、重复/空 id、空方案列表、非序列输入、非 `SigningScheme` 元素、未知当前方案、不可调用时钟、非 int 边界（含 bool）。时钟存于实例属性、方案签名器构造一次后不再变动，无全局 signer 修改，16 线程并发测试确认无跨线程状态交换。
+
+## 测试（全部用真实 HMAC 签名，非 mock）
+
+`tests/test_itsdangerous/test_migration.py` 覆盖你点名的每个场景：退休前签发的旧内容可读、**持旧钥匙伪造退休后时间戳被拒**、同密钥不同 salt 不能交叉验证、未来时间及容差精确端点、`valid_from`/`valid_to`/`retire_at` 精确边界、两个迁移器共享同一注入时钟同时读取、停用瞬间不可用。`CountingSerializer` 记录反序列化次数，证明签名或时间任一不过关时 `loads_count == 0`，全部通过时恰好为 1；另有篡改、max_age 边界、URLSafe 压缩分支、字节输入等用例。
+
+文档新增 `docs/migration.rst`（含重签发决策示例）并挂入 toctree，`CHANGES.rst` 已记录。
