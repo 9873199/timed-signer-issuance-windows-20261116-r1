@@ -7,6 +7,11 @@ from .exc import BadPayload as BadPayload
 from .exc import BadSignature as BadSignature
 from .exc import BadTimeSignature as BadTimeSignature
 from .exc import SignatureExpired as SignatureExpired
+from .migration import MigratingTimedSerializer as MigratingTimedSerializer
+from .migration import SigningScheme as SigningScheme
+from .migration import (
+    URLSafeMigratingTimedSerializer as URLSafeMigratingTimedSerializer,
+)
 from .serializer import Serializer as Serializer
 from .signer import HMACAlgorithm as HMACAlgorithm
 from .signer import NoneAlgorithm as NoneAlgorithm

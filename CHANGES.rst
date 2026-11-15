@@ -5,6 +5,12 @@ Unreleased
 
 -   Drop support for Python 3.8 and 3.9.
 -   Remove previously deprecated code.
+-   Add :class:`~itsdangerous.MigratingTimedSerializer` and
+    :class:`~itsdangerous.SigningScheme` for retiring signing keys based
+    on the issuance window each key is allowed to prove, rather than a
+    blanket grace period. Verification uses an injected clock snapshot,
+    returns the matching scheme id, and only deserializes the payload
+    after the signature and every time check pass.
 
 
 Version 2.2.0

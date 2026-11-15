@@ -57,6 +57,7 @@ Table of Contents
     signer
     exceptions
     timed
+    migration
     url_safe
     encoding
     license
